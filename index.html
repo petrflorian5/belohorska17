@@ -629,12 +629,12 @@
 
     // Hero masked reveal — CSS position:sticky handles the pin; we just scrub the timeline
     var tl=gsap.timeline({scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom bottom', scrub:0.6}});
-    tl.to('#heroMask',{width:'100vw', height:'100vh', borderRadius:0, ease:'power2.inOut'},0)
-      .to('#heroImg',{scale:1, ease:'power2.inOut'},0)
-      .to('#heroScrim',{opacity:1, ease:'power1.in'},0)
-      .to('#heroBrand',{opacity:0, y:-30, ease:'power1.in'},0)
-      .to('#scrollcue',{opacity:0, ease:'power1.in'},0)
-      .to('#heroCopy',{opacity:1, ease:'power2.out'},0.55);
+    tl.to('#heroMask',{width:'100vw', height:'100vh', borderRadius:0, ease:'none'},0)
+      .to('#heroImg',{scale:1, ease:'none'},0)
+      .to('#heroScrim',{opacity:1, ease:'none'},0)
+      .to('#heroBrand',{opacity:0, y:-30, ease:'power1.in', duration:0.45},0)
+      .to('#scrollcue',{opacity:0, ease:'power1.in', duration:0.3},0)
+      .to('#heroCopy',{opacity:1, ease:'power1.out'},0.55);
 
     // Reveals (batch)
     ScrollTrigger.batch('[data-reveal]',{start:'top 84%', onEnter:function(b){ b.forEach(function(el){ el.classList.add('in'); }); }});
