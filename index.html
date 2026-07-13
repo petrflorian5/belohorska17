@@ -193,7 +193,9 @@
   .gal-tabs button:hover{border-color:#bcd2e6;color:#fff}
   .gal-tabs button.active{background:#fff;border-color:#fff;color:var(--ink)}
   .gal-empty{grid-column:1/-1;display:flex;align-items:center;justify-content:center;min-height:260px;border:1px dashed rgba(255,255,255,.3);border-radius:4px;color:rgba(255,255,255,.55);font-size:.95rem;text-align:center;padding:30px}
-  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:16px;margin-top:58px}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:225px;grid-auto-flow:dense;gap:14px;margin-top:58px}
+  .gal-item.gp{grid-row:span 2}
+  .gal-item.gw{grid-column:span 2}
   .gal-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer}
   .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.19,1,.22,1)}
   .gal-item:hover img{transform:scale(1.08)}
@@ -465,29 +467,29 @@
 <section class="gallery pad" id="gallery">
   <div class="wrap">
     <div class="band-label" data-reveal data-en="Gallery" data-cz="Galerie">Gallery</div>
-    <h2 class="section-title" data-reveal data-en="The building today." data-cz="Budova dnes.">The building today.</h2>
+    <h2 class="section-title" data-reveal data-en="The building — today and tomorrow." data-cz="Budova dnes — a po úpravách.">The building — today and tomorrow.</h2>
     <p class="gal-note" data-reveal data-en="Photographs show the current state of the building. Ahead of a lease, the interiors will be refreshed and prepared to suit the incoming tenant." data-cz="Fotografie zachycují aktuální stav budovy. Před pronájmem počítáme s úpravami a přípravou interiérů podle potřeb nájemce.">Photographs show the current state of the building. Ahead of a lease, the interiors will be refreshed and prepared to suit the incoming tenant.</p>
     <div class="gal-tabs" data-reveal>
-      <button class="active" data-cat="current" data-en="Current state" data-cz="Aktuální stav">Current state</button>
-      <button data-cat="viz" data-en="Visualisations" data-cz="Vizualizace">Visualisations</button>
+      <button class="active" data-cat="viz" data-en="Visualisations" data-cz="Vizualizace">Visualisations</button>
+      <button data-cat="current" data-en="Current state" data-cz="Aktuální stav">Current state</button>
     </div>
     <div class="gal-grid">
-      <div class="gal-item span2 row2" data-gcat="current" data-reveal data-img="assets/g_atrium.jpg"><img src="assets/g_atrium.jpg" alt="Skylit central atrium"><div class="gcap" data-en="Skylit atrium" data-cz="Prosklené atrium">Skylit atrium</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="1" data-img="assets/g_stair.jpg"><img src="assets/g_stair.jpg" alt="Main staircase"><div class="gcap" data-en="Main staircase" data-cz="Hlavní schodiště">Main staircase</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="2" data-img="assets/g_reception.jpg"><img src="assets/g_reception.jpg" alt="Reception"><div class="gcap" data-en="Reception" data-cz="Recepce">Reception</div></div>
-      <div class="gal-item span2" data-gcat="current" data-reveal data-img="assets/g_office_oval.jpg"><img src="assets/g_office_oval.jpg" alt="Office with feature oval window"><div class="gcap" data-en="Office with feature window" data-cz="Kancelář s originálním oknem">Office with feature window</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="1" data-img="assets/g_atrium_top.jpg"><img src="assets/g_atrium_top.jpg" alt="Garage and parking"><div class="gcap" data-en="Garage & parking" data-cz="Garáž a parkování">Garage &amp; parking</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="2" data-img="assets/g_office_attic.jpg"><img src="assets/g_office_attic.jpg" alt="Top-floor office"><div class="gcap" data-en="Top-floor office" data-cz="Kancelář v podkroví">Top-floor office</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-img="assets/g_office_garden.jpg"><img src="assets/g_office_garden.jpg" alt="Office under the roof"><div class="gcap" data-en="Office under the roof" data-cz="Kancelář v podkroví">Office under the roof</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="1" data-img="assets/g_kitchen.jpg"><img src="assets/g_kitchen.jpg" alt="Glazed landing"><div class="gcap" data-en="Glazed landing" data-cz="Prosklená podesta">Glazed landing</div></div>
-      <div class="gal-item span2" data-gcat="current" data-reveal data-img="assets/g_garage.jpg"><img src="assets/g_garage.jpg" alt="Bělohorská streetscape"><div class="gcap" data-en="Bělohorská streetscape" data-cz="Ulice Bělohorská">Bělohorská streetscape</div></div>
-      <div class="gal-item" data-gcat="current" data-reveal data-delay="1" data-img="assets/g_facade.jpg"><img src="assets/g_facade.jpg" alt="Street façade"><div class="gcap" data-en="Street façade" data-cz="Uliční fasáda">Street façade</div></div>
-      <div class="gal-item span2 row2" data-gcat="viz" style="display:none" data-img="assets/viz_facade.jpg"><img src="assets/viz_facade.jpg" alt="Evening view of the façade — visualisation" loading="lazy"><div class="gcap" data-en="Evening façade — visualisation" data-cz="Večerní fasáda — vizualizace">Evening façade — visualisation</div></div>
-      <div class="gal-item" data-gcat="viz" style="display:none" data-img="assets/viz_office.jpg"><img src="assets/viz_office.jpg" alt="Open-plan office — visualisation" loading="lazy"><div class="gcap" data-en="Top-floor office — visualisation" data-cz="Kancelář v podkroví — vizualizace">Top-floor office — visualisation</div></div>
-      <div class="gal-item" data-gcat="viz" style="display:none" data-img="assets/viz_atrium.jpg"><img src="assets/viz_atrium.jpg" alt="Skylit atrium — visualisation" loading="lazy"><div class="gcap" data-en="Skylit atrium — visualisation" data-cz="Prosklené atrium — vizualizace">Skylit atrium — visualisation</div></div>
-      <div class="gal-item" data-gcat="viz" style="display:none" data-img="assets/viz_reception.jpg"><img src="assets/viz_reception.jpg" alt="Reception — visualisation" loading="lazy"><div class="gcap" data-en="Reception — visualisation" data-cz="Recepce — vizualizace">Reception — visualisation</div></div>
-      <div class="gal-item" data-gcat="viz" style="display:none" data-img="assets/viz_stair.jpg"><img src="assets/viz_stair.jpg" alt="Main staircase — visualisation" loading="lazy"><div class="gcap" data-en="Main staircase — visualisation" data-cz="Hlavní schodiště — vizualizace">Main staircase — visualisation</div></div>
-      <div class="gal-item span2" data-gcat="viz" style="display:none" data-img="assets/viz_boardroom.jpg"><img src="assets/viz_boardroom.jpg" alt="Boardroom — visualisation" loading="lazy"><div class="gcap" data-en="Boardroom — visualisation" data-cz="Velká zasedací místnost — vizualizace">Boardroom — visualisation</div></div>
+      <div class="gal-item gp" data-gcat="viz" data-img="assets/viz_atrium.jpg"><img src="assets/viz_atrium.jpg" alt="Skylit atrium — visualisation" loading="lazy"><div class="gcap" data-en="Skylit atrium — visualisation" data-cz="Prosklené atrium — vizualizace">Skylit atrium — visualisation</div></div>
+      <div class="gal-item gp" data-gcat="viz" data-img="assets/viz_reception.jpg"><img src="assets/viz_reception.jpg" alt="Reception — visualisation" loading="lazy"><div class="gcap" data-en="Reception — visualisation" data-cz="Recepce — vizualizace">Reception — visualisation</div></div>
+      <div class="gal-item gw" data-gcat="viz" data-img="assets/viz_facade.jpg"><img src="assets/viz_facade.jpg" alt="Evening façade — visualisation" loading="lazy"><div class="gcap" data-en="Evening façade — visualisation" data-cz="Večerní fasáda — vizualizace">Evening façade — visualisation</div></div>
+      <div class="gal-item gp" data-gcat="viz" data-img="assets/viz_office.jpg"><img src="assets/viz_office.jpg" alt="Top-floor office — visualisation" loading="lazy"><div class="gcap" data-en="Top-floor office — visualisation" data-cz="Kancelář v podkroví — vizualizace">Top-floor office — visualisation</div></div>
+      <div class="gal-item gp" data-gcat="viz" data-img="assets/viz_stair.jpg"><img src="assets/viz_stair.jpg" alt="Main staircase — visualisation" loading="lazy"><div class="gcap" data-en="Main staircase — visualisation" data-cz="Hlavní schodiště — vizualizace">Main staircase — visualisation</div></div>
+      <div class="gal-item gw" data-gcat="viz" data-img="assets/viz_boardroom.jpg"><img src="assets/viz_boardroom.jpg" alt="Boardroom — visualisation" loading="lazy"><div class="gcap" data-en="Boardroom — visualisation" data-cz="Velká zasedací místnost — vizualizace">Boardroom — visualisation</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_atrium.jpg"><img src="assets/g_atrium.jpg" alt="Skylit atrium" loading="lazy"><div class="gcap" data-en="Skylit atrium" data-cz="Prosklené atrium">Skylit atrium</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_stair.jpg"><img src="assets/g_stair.jpg" alt="Main staircase" loading="lazy"><div class="gcap" data-en="Main staircase" data-cz="Hlavní schodiště">Main staircase</div></div>
+      <div class="gal-item gw" data-gcat="current" style="display:none" data-img="assets/g_facade.jpg"><img src="assets/g_facade.jpg" alt="Street façade" loading="lazy"><div class="gcap" data-en="Street façade" data-cz="Uliční fasáda">Street façade</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_reception.jpg"><img src="assets/g_reception.jpg" alt="Reception" loading="lazy"><div class="gcap" data-en="Reception" data-cz="Recepce">Reception</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_office_attic.jpg"><img src="assets/g_office_attic.jpg" alt="Top-floor office" loading="lazy"><div class="gcap" data-en="Top-floor office" data-cz="Kancelář v podkroví">Top-floor office</div></div>
+      <div class="gal-item gw" data-gcat="current" style="display:none" data-img="assets/g_office_oval.jpg"><img src="assets/g_office_oval.jpg" alt="Office with feature window" loading="lazy"><div class="gcap" data-en="Office with feature window" data-cz="Kancelář s originálním oknem">Office with feature window</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_kitchen.jpg"><img src="assets/g_kitchen.jpg" alt="Glazed landing" loading="lazy"><div class="gcap" data-en="Glazed landing" data-cz="Prosklená podesta">Glazed landing</div></div>
+      <div class="gal-item gp" data-gcat="current" style="display:none" data-img="assets/g_office_garden.jpg"><img src="assets/g_office_garden.jpg" alt="Office under the roof" loading="lazy"><div class="gcap" data-en="Office under the roof" data-cz="Kancelář v podkroví">Office under the roof</div></div>
+      <div class="gal-item gw" data-gcat="current" style="display:none" data-img="assets/g_garage.jpg"><img src="assets/g_garage.jpg" alt="Bělohorská streetscape" loading="lazy"><div class="gcap" data-en="Bělohorská streetscape" data-cz="Ulice Bělohorská">Bělohorská streetscape</div></div>
+      <div class="gal-item gw" data-gcat="current" style="display:none" data-img="assets/g_atrium_top.jpg"><img src="assets/g_atrium_top.jpg" alt="Garage & parking" loading="lazy"><div class="gcap" data-en="Garage & parking" data-cz="Garáž a parkování">Garage & parking</div></div>
     </div>
   </div>
 </section>
