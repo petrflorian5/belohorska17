@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bělohorská 17 — A private villa office to lease · Prague 6, Břevnov</title>
+<meta name="description" content="Bělohorská 17 — an elegant, self-contained villa office building of ~1,054 m² to lease in full. Prague 6, Břevnov. Tram at the door, six parking spaces, a glazed atrium.">
+<meta property="og:title" content="Bělohorská 17 — a private villa office to lease">
+<meta property="og:description" content="An entire elegant building of ~1,054 m² in Prague 6 – Břevnov. A tram at the door and the Castle down the line.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --paper:#faf7f1; --stone:#f0ebe1; --stone-2:#e7e0d3; --card:#fffdf9;
+    --ink:#1b1f24; --ink-soft:#33383f; --muted:#6c6759;
+    --slate:#294863; --slate-2:#37628a; --slate-tint:#eef2f6;
+    --line:rgba(27,31,36,.13);
+    --maxw:1240px;
+    --serif:'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.62;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:400;line-height:1.06;letter-spacing:-.015em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--slate-2)}
+  ::selection{background:var(--slate);color:#fff}
+
+  /* ---------- Header ---------- */
+  header{position:fixed;top:0;left:0;right:0;z-index:120;padding:24px 0;transition:background .5s,box-shadow .5s,padding .5s}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  header.solid{background:rgba(250,247,241,.9);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line);padding:15px 0}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand .name{font-family:var(--serif);font-size:1.4rem;font-weight:500;letter-spacing:.01em}
+  .brand .sub{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;margin-top:6px;color:var(--muted)}
+  nav.main{display:flex;align-items:center;gap:32px}
+  nav.main a{font-size:.82rem;font-weight:500;position:relative;padding:4px 0}
+  nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--slate);transition:right .3s}
+  nav.main a:hover::after{right:0}
+  .hdr-tools{display:flex;align-items:center;gap:20px}
+  .lang{display:flex;align-items:center;gap:2px;font-size:.76rem;font-weight:600}
+  .lang button{background:none;border:none;color:inherit;cursor:pointer;font:inherit;padding:4px 5px;opacity:.5;transition:opacity .2s}
+  .lang button.active{opacity:1;color:var(--slate-2)}
+  .lang span{opacity:.35}
+  .btn{display:inline-block;font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.02em;padding:12px 24px;border-radius:2px;border:1px solid var(--slate);background:var(--slate);color:#fff;cursor:pointer;transition:all .25s}
+  .btn:hover{background:transparent;color:var(--slate)}
+  .btn.ghost{background:transparent;color:var(--slate)}
+  .btn.ghost:hover{background:var(--slate);color:#fff}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+  .menu-toggle span{width:24px;height:2px;background:var(--ink);transition:.3s}
+
+  /* ---------- Hero (masked reveal) ---------- */
+  .hero{position:relative;height:230vh}
+  .hero-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--stone)}
+  .hero-mask{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(42vmin,380px);height:min(52vmin,460px);border-radius:5px;overflow:hidden;z-index:2;box-shadow:0 40px 90px -30px rgba(27,31,36,.5)}
+  .hero-img{position:absolute;inset:0;background:url('assets/aerial_night_1.png') center 45%/cover no-repeat;transform:scale(1.18)}
+  .hero-mask-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,28,.15),rgba(20,24,28,.0) 40%,rgba(20,24,28,.55));opacity:0;z-index:3}
+  .hero-brand{position:absolute;top:calc(50% + min(26vmin,240px));left:50%;transform:translate(-50%,0);z-index:4;text-align:center;color:var(--ink)}
+  .hero-brand .hb-name{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:500;letter-spacing:.01em}
+  .hero-brand .hb-sub{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+  .hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:5;padding:0 40px 70px;opacity:0}
+  .hero-copy .inner{max-width:var(--maxw);margin:0 auto;color:#fff}
+  .hero-copy .eyebrow{color:#cfe0ef}
+  .hero-copy h1{font-size:clamp(3rem,8.5vw,7rem);font-weight:400;color:#fff;margin:16px 0 12px;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+  .hero-copy .lead{font-family:var(--serif);font-size:clamp(1.15rem,2.2vw,1.7rem);font-weight:300;max-width:30ch;opacity:.96}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:46px;margin-top:40px;padding-top:28px;border-top:1px solid rgba(255,255,255,.28)}
+  .hero-stats b{font-family:var(--serif);font-size:1.9rem;font-weight:400;display:block}
+  .hero-stats span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.82}
+  .scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:6;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:9px}
+  .scrollcue::after{content:"";width:1px;height:32px;background:var(--muted);animation:sd 1.9s infinite}
+  @keyframes sd{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}50.1%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  /* no-gsap fallback: full-bleed hero */
+  html.no-gsap .hero{height:100vh}
+  html.no-gsap .hero-mask{width:100vw;height:100vh;border-radius:0;transform:translate(-50%,-50%);box-shadow:none}
+  html.no-gsap .hero-img{transform:none}
+  html.no-gsap .hero-mask-scrim{opacity:1}
+  html.no-gsap .hero-brand{display:none}
+  html.no-gsap .hero-copy{opacity:1}
+
+  /* ---------- Generic section ---------- */
+  .pad{padding:clamp(80px,11vw,150px) 0}
+  .band-label{font-size:.72rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--slate-2);margin-bottom:26px;display:flex;align-items:center;gap:14px}
+  .band-label::before{content:"";width:36px;height:1px;background:var(--slate-2)}
+  h2.section-title{font-size:clamp(2.2rem,5vw,3.9rem);font-weight:400;margin-bottom:30px;max-width:20ch}
+  .lead-p{font-size:1.18rem;color:var(--ink-soft);max-width:62ch;font-weight:400}
+  .lead-p+.lead-p{margin-top:20px}
+
+  /* reveal */
+  .js [data-reveal]{opacity:0;transform:translateY(42px);transition:opacity 1.1s cubic-bezier(.19,1,.22,1),transform 1.1s cubic-bezier(.19,1,.22,1)}
+  .js [data-reveal].in{opacity:1;transform:none}
+  .js [data-reveal][data-delay="1"]{transition-delay:.12s}
+  .js [data-reveal][data-delay="2"]{transition-delay:.24s}
+  .js [data-reveal][data-delay="3"]{transition-delay:.36s}
+  .js [data-clip]{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.19,1,.22,1)}
+  .js [data-clip].in{clip-path:inset(0 0 0% 0)}
+  .parallax-box{overflow:hidden}
+  .parallax-box img{will-change:transform}
+
+  /* ---------- Overview ---------- */
+  .overview .grid{display:grid;grid-template-columns:1.3fr .85fr;gap:80px;align-items:start}
+  .facts-card{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:40px}
+  .facts-card h3{font-family:var(--sans);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:22px;font-weight:600}
+  .facts-card dl>div{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-top:1px solid var(--line);font-size:.95rem}
+  .facts-card dt{color:var(--muted)}
+  .facts-card dd{font-weight:600;font-variant-numeric:tabular-nums;text-align:right}
+  .facts-card .avail{margin-top:26px;display:flex;align-items:center;gap:10px;font-size:.86rem;font-weight:600;color:#2f6d45}
+  .facts-card .avail::before{content:"";width:9px;height:9px;border-radius:50%;background:#3f9160;box-shadow:0 0 0 4px rgba(63,145,96,.18)}
+
+  /* ---------- Full-bleed statement ---------- */
+  .statement{position:relative;height:88vh;min-height:560px;overflow:hidden;display:flex;align-items:center;color:#fff}
+  .statement .parallax-box{position:absolute;inset:-12% 0}
+  .statement .parallax-box img{width:100%;height:124%;object-fit:cover}
+  .statement::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,26,34,.7),rgba(18,26,34,.25))}
+  .statement .wrap{position:relative;z-index:2}
+  .statement .band-label{color:#bcd2e6}
+  .statement .band-label::before{background:#bcd2e6}
+  .statement blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(2rem,5vw,3.8rem);line-height:1.1;max-width:18ch}
+  .statement .cite{margin-top:26px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+
+  /* ---------- Building features ---------- */
+  .building{background:var(--stone)}
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:60px;background:var(--line);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+  .feat{background:var(--paper);padding:42px 36px;transition:background .35s}
+  .feat:hover{background:var(--card)}
+  .feat .ic{width:32px;height:32px;color:var(--slate-2);margin-bottom:22px}
+  .feat h3{font-size:1.4rem;font-weight:500;margin-bottom:11px}
+  .feat p{font-size:.95rem;color:var(--muted)}
+
+  /* ---------- Specs / floor stack ---------- */
+  .specs .grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;margin-top:14px}
+  .stack{display:flex;flex-direction:column;gap:8px}
+  .stack .roofline{height:24px;background:linear-gradient(90deg,var(--slate),var(--slate-2));border-radius:4px 4px 0 0;clip-path:polygon(0 100%,50% 0,100% 100%);margin-bottom:2px}
+  .floor{position:relative;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:60px;border-radius:3px;cursor:pointer;color:#fff;font-weight:500;transition:transform .35s,box-shadow .35s,outline-color .2s;overflow:hidden;outline:2px solid transparent;outline-offset:2px}
+  .floor .fl-name{z-index:1;font-size:.96rem}
+  .floor .fl-area{z-index:1;font-size:.82rem;opacity:.9;font-variant-numeric:tabular-nums}
+  .floor.office{background:linear-gradient(90deg,var(--slate),var(--slate-2))}
+  .floor.ground{background:linear-gradient(90deg,#6b5847,#8a6f57)}
+  .floor.below{background:linear-gradient(90deg,#9a948a,#aca69b)}
+  .floor:hover{transform:translateX(9px);box-shadow:-9px 9px 26px rgba(27,31,36,.14)}
+  .floor.active{outline-color:var(--slate-2);box-shadow:-7px 7px 24px rgba(41,72,99,.28)}
+  .floor-detail{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:38px;min-height:240px}
+  .floor-detail .dt-use{color:var(--slate-2);font-weight:600;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
+  .floor-detail h3{font-size:1.7rem;font-weight:500}
+  .floor-detail .dt-area{font-family:var(--serif);font-size:2.8rem;font-weight:400;margin:12px 0 6px;color:var(--slate)}
+  .floor-detail p{color:var(--muted);font-size:.98rem}
+  .spec-table{margin-top:64px;border-top:2px solid var(--ink)}
+  .spec-table .row{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .spec-table .k{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .spec-table .v{font-family:var(--serif);font-size:1.55rem;font-weight:400}
+  .spec-table .v .n{font-family:var(--sans);font-size:.84rem;color:var(--muted)}
+  .spec-table .d{font-size:.86rem;color:var(--muted)}
+  .plans-row{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:52px}
+  .plan-thumb{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px;cursor:pointer;transition:transform .3s,box-shadow .3s}
+  .plan-thumb:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(27,31,36,.11)}
+  .plan-thumb img{height:124px;width:100%;object-fit:contain;filter:saturate(0)}
+  .plan-thumb .cap{font-size:.72rem;text-align:center;margin-top:9px;color:var(--muted)}
+  .plans-note{margin-top:24px;font-size:.9rem;color:var(--muted)}
+  .plans-note a{color:var(--slate-2);font-weight:600;border-bottom:1px solid var(--slate-2)}
+
+  /* ---------- Location ---------- */
+  .location{background:var(--stone)}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin-top:14px;align-items:start}
+  .transport li,.hood li{display:flex;gap:18px;padding:17px 0;border-bottom:1px solid var(--line);align-items:flex-start;list-style:none}
+  .transport .t-time{font-family:var(--serif);font-size:1.15rem;min-width:78px;color:var(--slate-2)}
+  .transport .t-txt b{display:block;font-size:.98rem}
+  .transport .t-txt span{font-size:.86rem;color:var(--muted)}
+  ul.hood li::before{content:"";width:7px;height:7px;margin-top:8px;border-radius:50%;background:var(--slate-2);flex:0 0 auto}
+  ul.hood li{padding:12px 0}
+  .map-wrap{margin-top:52px;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+  .map-wrap iframe{width:100%;height:440px;border:0;display:block;filter:grayscale(.35) contrast(1.05)}
+  .map-bar{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:var(--paper);border-top:1px solid var(--line);flex-wrap:wrap;gap:12px}
+  .map-bar .addr b{font-weight:600}
+
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--ink);color:#fff}
+  .gallery .band-label{color:#bcd2e6}.gallery .band-label::before{background:#bcd2e6}
+  .gallery h2{color:#fff}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:16px;margin-top:58px}
+  .gal-item{position:relative;overflow:hidden;border-radius:4px;cursor:pointer}
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.19,1,.22,1)}
+  .gal-item:hover img{transform:scale(1.08)}
+  .gal-item::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.4),transparent 55%);opacity:0;transition:opacity .4s}
+  .gal-item:hover::after{opacity:1}
+  .gal-item .gcap{position:absolute;left:18px;bottom:15px;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;opacity:0;transform:translateY(6px);transition:.4s;z-index:1}
+  .gal-item:hover .gcap{opacity:.95;transform:none}
+  .span2{grid-column:span 2}.row2{grid-row:span 2}
+
+  /* ---------- Contact ---------- */
+  .contact .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:74px;margin-top:14px;align-items:start}
+  .agent{background:var(--slate);color:#fff;border-radius:5px;padding:44px}
+  .agent .role{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:#bcd2e6;font-weight:600}
+  .agent .pname{font-family:var(--serif);font-size:2.1rem;font-weight:400;margin:10px 0 4px}
+  .agent .company{color:rgba(255,255,255,.75);margin-bottom:28px}
+  .agent .crow{display:flex;gap:13px;padding:15px 0;border-top:1px solid rgba(255,255,255,.16);font-size:.95rem;align-items:center}
+  .agent .crow .ic{width:18px;height:18px;color:#bcd2e6;flex:0 0 auto}
+  .agent .crow a:hover{color:#bcd2e6}
+  .agent .note{margin-top:26px;font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.5}
+  form .frow{margin-bottom:18px}
+  form label{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+  form input,form textarea,form select{width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:3px;background:var(--card);font:inherit;font-size:.95rem;color:var(--ink);transition:border .2s}
+  form input:focus,form textarea:focus,form select:focus{outline:none;border-color:var(--slate)}
+  form textarea{min-height:130px;resize:vertical}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  form .btn{border:none;width:100%;padding:17px;font-size:.88rem;margin-top:6px}
+  .form-hint{font-size:.78rem;color:var(--muted);margin-top:13px;text-align:center}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:rgba(255,255,255,.72);padding:70px 0 32px}
+  footer .grid{display:flex;justify-content:space-between;gap:44px;flex-wrap:wrap;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.14)}
+  footer .f-brand .name{font-family:var(--serif);font-size:1.6rem;color:#fff}
+  footer .f-brand .sub{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;margin-top:7px}
+  footer .f-col h4{font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:15px;font-weight:600}
+  footer .f-col a,footer .f-col p{display:block;font-size:.88rem;margin-bottom:9px;color:rgba(255,255,255,.7)}
+  footer .f-col a:hover{color:#bcd2e6}
+  footer .legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:.75rem;opacity:.6}
+
+  /* ---------- Lightbox ---------- */
+  .lb{position:fixed;inset:0;background:rgba(12,14,17,.95);z-index:300;display:none;align-items:center;justify-content:center;padding:44px}
+  .lb.open{display:flex}
+  .lb img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:3px}
+  .lb .close{position:absolute;top:26px;right:36px;color:#fff;font-size:2rem;cursor:pointer;opacity:.8}
+  .lb .close:hover{opacity:1}
+  .lb .nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2.6rem;cursor:pointer;padding:22px;opacity:.6;user-select:none}
+  .lb .nav:hover{opacity:1}.lb .prev{left:8px}.lb .next{right:8px}
+  .lb .cap{position:absolute;bottom:26px;left:0;right:0;text-align:center;color:#fff;font-size:.84rem;letter-spacing:.08em;opacity:.8}
+
+  /* progress bar */
+  .progress{position:fixed;top:0;left:0;height:2px;background:var(--slate-2);width:0;z-index:200}
+
+  @media(max-width:1000px){
+    .overview .grid,.specs .grid,.loc-grid,.contact .grid{grid-template-columns:1fr;gap:48px}
+    .feat-grid{grid-template-columns:repeat(2,1fr)}
+    .plans-row{grid-template-columns:repeat(3,1fr)}
+    .gal-grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(max-width:760px){
+    .wrap{padding:0 24px}
+    nav.main{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--paper);flex-direction:column;justify-content:center;gap:28px;transform:translateX(100%);transition:transform .45s;box-shadow:-12px 0 44px rgba(0,0,0,.16);z-index:119}
+    nav.main.open{transform:none}
+    nav.main a{font-size:1.1rem}
+    .menu-toggle{display:flex}.hdr-tools .btn{display:none}
+    .hero-copy{padding:0 24px 48px}
+    .feat-grid{grid-template-columns:1fr}
+    .plans-row{grid-template-columns:repeat(2,1fr)}
+    .two{grid-template-columns:1fr}
+    .spec-table .row{grid-template-columns:1fr;gap:5px}
+    .hero-stats{gap:28px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .js [data-reveal],.js [data-clip]{transition:none!important;opacity:1!important;transform:none!important;clip-path:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="hdr">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="name">Bělohorská 17</span><span class="sub">Břevnov · Praha 6</span></a>
+    <nav class="main" id="nav">
+      <a href="#overview" data-en="Overview" data-cz="Přehled">Overview</a>
+      <a href="#building" data-en="The Building" data-cz="Budova">The Building</a>
+      <a href="#specs" data-en="Specs & Plans" data-cz="Parametry">Specs &amp; Plans</a>
+      <a href="#location" data-en="Location" data-cz="Lokalita">Location</a>
+      <a href="#gallery" data-en="Gallery" data-cz="Galerie">Gallery</a>
+      <a href="#contact" data-en="Contact" data-cz="Kontakt">Contact</a>
+    </nav>
+    <div class="hdr-tools">
+      <div class="lang" id="lang"><button data-lang="en" class="active">EN</button><span>/</span><button data-lang="cz">CZ</button></div>
+      <a href="#contact" class="btn" data-en="Enquire" data-cz="Poptat">Enquire</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-sticky">
+    <div class="hero-mask" id="heroMask">
+      <div class="hero-img" id="heroImg"></div>
+      <div class="hero-mask-scrim" id="heroScrim"></div>
+    </div>
+    <div class="hero-brand" id="heroBrand">
+      <div class="hb-name">Bělohorská 17</div>
+      <div class="hb-sub" data-en="Prague 6 · Břevnov" data-cz="Praha 6 · Břevnov">Prague 6 · Břevnov</div>
+    </div>
+    <div class="hero-copy" id="heroCopy">
+      <div class="inner">
+        <span class="eyebrow" data-en="Prague 6 · Břevnov — To let in full" data-cz="Praha 6 · Břevnov — K pronájmu celá budova">Prague 6 · Břevnov — To let in full</span>
+        <h1>Bělohorská&nbsp;17</h1>
+        <p class="lead" data-en="An elegant villa office building — an entire address to make your own." data-cz="Elegantní vilová kancelářská budova — celá adresa jen pro vás.">An elegant villa office building — an entire address to make your own.</p>
+        <div class="hero-stats">
+          <div><b>1,054&nbsp;m²</b><span data-en="Office area" data-cz="Kanceláře">Office area</span></div>
+          <div><b>4 + 2</b><span data-en="Floors above / below" data-cz="Podlaží nad / pod zemí">Floors above / below</span></div>
+          <div><b>6</b><span data-en="Parking spaces" data-cz="Parkovací stání">Parking spaces</span></div>
+          <div><b data-en="Single tenant" data-cz="Jeden nájemce">Single tenant</b><span data-en="Your private HQ" data-cz="Vaše soukromé sídlo">Your private HQ</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="scrollcue" id="scrollcue" data-en="Scroll to explore" data-cz="Posuňte pro prohlídku">Scroll to explore</div>
+  </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+<section class="overview pad" id="overview">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="band-label" data-reveal data-en="The opportunity" data-cz="Příležitost">The opportunity</div>
+        <h2 class="section-title" data-reveal data-en="A whole building, in one of Prague's most sought-after quarters." data-cz="Celá budova v jedné z nejžádanějších pražských čtvrtí.">A whole building, in one of Prague's most sought-after quarters.</h2>
+        <p class="lead-p" data-reveal data-delay="1" data-en="Bělohorská 17 is a self-contained, sensitively refurbished period office building of roughly 1,054 m² in Prague 6 – Břevnov. Behind its elegant historic façade sits a light-filled, glass-roofed atrium, well-proportioned floors and its own private entrance." data-cz="Bělohorská 17 je samostatná, citlivě zrekonstruovaná historická kancelářská budova o rozloze přibližně 1 054 m² v Praze 6 – Břevnově. Za elegantní historickou fasádou se skrývá prosvětlené atrium s prosklenou střechou, dobře uspořádaná podlaží a vlastní vstup.">Bělohorská 17 is a self-contained, sensitively refurbished period office building of roughly 1,054 m² in Prague 6 – Břevnov.</p>
+        <p class="lead-p" data-reveal data-delay="2" data-en="Available to lease in full, it is a rare chance for one company to take an entire address as its private headquarters — with a tram stop at the door, six parking spaces, and Prague Castle just minutes away." data-cz="K pronájmu jako celek nabízí vzácnou příležitost, aby si jedna společnost pronajala celou adresu jako své soukromé sídlo — s tramvajovou zastávkou u vchodu, šesti parkovacími stáními a Pražským hradem na dosah.">Available to lease in full, it is a rare chance for one company to take an entire address as its private headquarters.</p>
+      </div>
+      <div class="facts-card" data-reveal data-delay="1">
+        <h3 data-en="At a glance" data-cz="Ve zkratce">At a glance</h3>
+        <dl>
+          <div><dt data-en="Total leasable area" data-cz="Celková plocha">Total leasable area</dt><dd>1,290 m²</dd></div>
+          <div><dt data-en="Office" data-cz="Kanceláře">Office</dt><dd>1,054 m²</dd></div>
+          <div><dt data-en="Storage" data-cz="Sklady">Storage</dt><dd>236 m²</dd></div>
+          <div><dt data-en="Typical floor" data-cz="Typické podlaží">Typical floor</dt><dd>~270 m²</dd></div>
+          <div><dt data-en="Floors" data-cz="Podlaží">Floors</dt><dd>4 above / 2 below</dd></div>
+          <div><dt data-en="Parking" data-cz="Parkování">Parking</dt><dd>6 spaces</dd></div>
+          <div><dt data-en="Office rent" data-cz="Nájem kanceláří">Office rent</dt><dd>from €10 / m² / mo</dd></div>
+        </dl>
+        <div class="avail" data-en="Available immediately" data-cz="Volné ihned">Available immediately</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATEMENT 1 ============ -->
+<section class="statement" id="st1">
+  <div class="parallax-box"><img src="assets/aerial_day_1.png" alt="Bělohorská 17 rooftop and atrium" data-pspeed="12"></div>
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Character" data-cz="Charakter">Character</div>
+    <blockquote data-reveal data-delay="1" data-en="Not a floor. Not a suite. An entire building with your name on it." data-cz="Ne patro. Ne jednotka. Celá budova s vaším jménem.">Not a floor. Not a suite. An entire building with your name on it.</blockquote>
+    <div class="cite" data-reveal data-delay="2" data-en="Bělohorská 270/17 · Prague 6 – Břevnov" data-cz="Bělohorská 270/17 · Praha 6 – Břevnov">Bělohorská 270/17 · Prague 6 – Břevnov</div>
+  </div>
+</section>
+
+<!-- ============ THE BUILDING ============ -->
+<section class="building pad" id="building">
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="The building" data-cz="Budova">The building</div>
+    <h2 class="section-title" data-reveal data-en="Period elegance, quietly modernised." data-cz="Historická elegance, nenápadně zmodernizovaná.">Period elegance, quietly modernised.</h2>
+    <p class="lead-p" data-reveal data-delay="1" data-en="A distinctive villa-style building that gives an occupier something a glass tower never can — identity, scale and character across every floor." data-cz="Výrazná budova vilového typu nabízí nájemci to, co prosklená věž nikdy nedokáže — identitu, měřítko a charakter na každém podlaží.">A distinctive villa-style building that gives an occupier something a glass tower never can — identity, scale and character.</p>
+    <div class="feat-grid">
+      <div class="feat" data-reveal><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg><h3 data-en="Your own address" data-cz="Vlastní adresa">Your own address</h3><p data-en="A full-building lease with a private entrance — brand it as your headquarters, inside and out." data-cz="Pronájem celé budovy s vlastním vstupem — uvnitř i venku ji označíte jako své sídlo.">A full-building lease with a private entrance.</p></div>
+      <div class="feat" data-reveal data-delay="1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9l9-6 9 6M4 10v10h16V10M9 21v-6h6v6M4 10h16"/></svg><h3 data-en="Glazed atrium" data-cz="Prosklené atrium">Glazed atrium</h3><p data-en="A skylit central atrium brings daylight deep into the building — a striking heart to the space." data-cz="Centrální atrium s prosklenou střechou přivádí denní světlo hluboko do budovy — působivé srdce prostoru.">A skylit central atrium brings daylight deep into the building.</p></div>
+      <div class="feat" data-reveal data-delay="2"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 3h14v18H5zM9 3v18M15 3v18M5 9h4M5 15h4M15 9h4M15 15h4"/></svg><h3 data-en="Well-proportioned floors" data-cz="Dobře uspořádaná podlaží">Well-proportioned floors</h3><p data-en="Four office floors of roughly 270 m² each, with a mix of open and cellular rooms and generous ceilings." data-cz="Čtyři kancelářská podlaží po zhruba 270 m² s kombinací open space a uzavřených kanceláří a velkorysou výškou stropů.">Four office floors of ~270 m² each.</p></div>
+      <div class="feat" data-reveal><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v6H5zM7 17v2M17 17v2M7 14h.01M17 14h.01"/></svg><h3 data-en="Parking & garage" data-cz="Parkování a garáž">Parking &amp; garage</h3><p data-en="Six dedicated parking spaces in the building's own garage — a genuine rarity in this location." data-cz="Šest vyhrazených parkovacích stání ve vlastní garáži budovy — v této lokalitě skutečná vzácnost.">Six dedicated spaces in the building's own garage.</p></div>
+      <div class="feat" data-reveal data-delay="1"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="3" width="12" height="18" rx="1"/><path d="M10 3v18M14 3v18M6 8h4M14 8h4M6 13h4M14 13h4"/></svg><h3 data-en="Passenger lift" data-cz="Osobní výtah">Passenger lift</h3><p data-en="A lift connects every level, from the garage below to the top floor under the roof." data-cz="Výtah propojuje všechna podlaží, od garáže až po nejvyšší patro v podkroví.">A lift connects every level.</p></div>
+      <div class="feat" data-reveal data-delay="2"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-5.2-7-10a7 7 0 0114 0c0 4.8-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg><h3 data-en="Prime residential setting" data-cz="Prestižní rezidenční okolí">Prime residential setting</h3><p data-en="Among the cafés, shops and villas of Břevnov — a calm, prestigious address minutes from the centre." data-cz="Uprostřed kaváren, obchodů a vil Břevnova — klidná, prestižní adresa pár minut od centra.">Among the cafés, shops and villas of Břevnov.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECS ============ -->
+<section class="specs pad" id="specs">
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Specifications & floor plans" data-cz="Parametry a půdorysy">Specifications &amp; floor plans</div>
+    <h2 class="section-title" data-reveal data-en="Six levels, one occupier." data-cz="Šest úrovní, jeden nájemce.">Six levels, one occupier.</h2>
+    <div class="grid">
+      <div class="stack" data-reveal id="stack">
+        <div class="roofline"></div>
+        <div class="floor office" data-en-name="3rd floor" data-cz-name="3. podlaží" data-area="~200 m²" data-en-use="Offices" data-cz-use="Kanceláře" data-en-desc="Top office floor beneath the roof, with characterful dormer windows and the atrium skylight above." data-cz-desc="Nejvyšší kancelářské podlaží v podkroví, s charakteristickými vikýři a světlíkem atria nad hlavou." data-img="assets/plan_3f.png"><span class="fl-name" data-en="3rd floor" data-cz="3. podlaží">3rd floor</span><span class="fl-area">Offices · ~200 m²</span></div>
+        <div class="floor office" data-en-name="2nd floor" data-cz-name="2. podlaží" data-area="~270 m²" data-en-use="Offices" data-cz-use="Kanceláře" data-en-desc="Full office floor around the central atrium and stair core — a mix of meeting rooms and cellular offices." data-cz-desc="Plnohodnotné kancelářské podlaží kolem centrálního atria a schodiště — kombinace jednacích místností a uzavřených kanceláří." data-img="assets/plan_2f.png"><span class="fl-name" data-en="2nd floor" data-cz="2. podlaží">2nd floor</span><span class="fl-area">Offices · ~270 m²</span></div>
+        <div class="floor office" data-en-name="1st floor" data-cz-name="1. podlaží" data-area="~270 m²" data-en-use="Offices" data-cz-use="Kanceláře" data-en-desc="Bright principal office floor with generous ceiling heights and street-facing rooms." data-cz-desc="Světlé hlavní kancelářské podlaží s velkorysou výškou stropů a místnostmi do ulice." data-img="assets/plan_1f.png"><span class="fl-name" data-en="1st floor" data-cz="1. podlaží">1st floor</span><span class="fl-area">Offices · ~270 m²</span></div>
+        <div class="floor ground active" data-en-name="Ground floor" data-cz-name="Přízemí" data-area="~270 m²" data-en-use="Offices / reception" data-cz-use="Kanceláře / recepce" data-en-desc="Entrance level with the main reception, meeting rooms and street frontage — the building's public face." data-cz-desc="Vstupní úroveň s hlavní recepcí, jednacími místnostmi a výlohou do ulice — reprezentativní tvář budovy." data-img="assets/plan_gf.png"><span class="fl-name" data-en="Ground floor" data-cz="Přízemí">Ground floor</span><span class="fl-area">Offices · ~270 m²</span></div>
+        <div class="floor below" data-en-name="Basement −1" data-cz-name="1. suterén" data-area="Storage" data-en-use="Storage & technical" data-cz-use="Sklady a technika" data-en-desc="Storage and back-of-house / technical rooms serving the whole building." data-cz-desc="Sklady a technické zázemí pro celou budovu." data-img="assets/plan_storage1.png"><span class="fl-name" data-en="Basement −1" data-cz="1. suterén">Basement −1</span><span class="fl-area" data-en="Storage" data-cz="Sklady">Storage</span></div>
+        <div class="floor below" data-en-name="Basement −2" data-cz-name="2. suterén" data-area="6 spaces" data-en-use="Garage" data-cz-use="Garáž" data-en-desc="The building's own garage with six parking spaces, plus boiler room and HVAC plant." data-cz-desc="Vlastní garáž budovy se šesti parkovacími stáními, kotelnou a strojovnou vzduchotechniky." data-img="assets/plan_storage1.png"><span class="fl-name" data-en="Basement −2" data-cz="2. suterén">Basement −2</span><span class="fl-area" data-en="Garage · 6 spaces" data-cz="Garáž · 6 stání">Garage · 6 spaces</span></div>
+      </div>
+      <div class="floor-detail" data-reveal data-delay="1" id="floorDetail">
+        <div class="dt-use" id="dtUse">Offices / reception</div>
+        <h3 id="dtName">Ground floor</h3>
+        <div class="dt-area" id="dtArea">~270 m²</div>
+        <p id="dtDesc">Entrance level with the main reception, meeting rooms and street frontage — the building's public face.</p>
+      </div>
+    </div>
+    <div class="spec-table" data-reveal>
+      <div class="row"><div class="k" data-en="Office rent" data-cz="Nájem kanceláří">Office rent</div><div class="v">€10 <span class="n">/ m² / mo</span></div><div class="d" data-en="Headline rent, subject to terms" data-cz="Základní nájem, dle podmínek">Headline rent, subject to terms</div></div>
+      <div class="row"><div class="k" data-en="Storage rent" data-cz="Nájem skladů">Storage rent</div><div class="v">€7 <span class="n">/ m² / mo</span></div><div class="d" data-en="Storage & ancillary space" data-cz="Sklady a vedlejší plochy">Storage &amp; ancillary space</div></div>
+      <div class="row"><div class="k" data-en="Service charge" data-cz="Služby">Service charge</div><div class="v">46 <span class="n">CZK / m² / mo</span></div><div class="d" data-en="Office & storage" data-cz="Kanceláře i sklady">Office &amp; storage</div></div>
+      <div class="row"><div class="k" data-en="Parking" data-cz="Parkování">Parking</div><div class="v">6 <span class="n" data-en="spaces" data-cz="stání">spaces</span></div><div class="d" data-en="In the building's garage" data-cz="Ve vlastní garáži budovy">In the building's garage</div></div>
+      <div class="row"><div class="k" data-en="Availability" data-cz="Dostupnost">Availability</div><div class="v" data-en="Immediate" data-cz="Ihned">Immediate</div><div class="d" data-en="Whole building, to let" data-cz="Celá budova, k pronájmu">Whole building, to let</div></div>
+    </div>
+    <div class="plans-row">
+      <div class="plan-thumb" data-reveal data-img="assets/plan_gf.png"><img src="assets/plan_gf.png" alt="Ground floor plan"><div class="cap" data-en="Ground floor" data-cz="Přízemí">Ground floor</div></div>
+      <div class="plan-thumb" data-reveal data-delay="1" data-img="assets/plan_1f.png"><img src="assets/plan_1f.png" alt="1st floor plan"><div class="cap" data-en="1st floor" data-cz="1. podlaží">1st floor</div></div>
+      <div class="plan-thumb" data-reveal data-delay="1" data-img="assets/plan_2f.png"><img src="assets/plan_2f.png" alt="2nd floor plan"><div class="cap" data-en="2nd floor" data-cz="2. podlaží">2nd floor</div></div>
+      <div class="plan-thumb" data-reveal data-delay="2" data-img="assets/plan_3f.png"><img src="assets/plan_3f.png" alt="3rd floor plan"><div class="cap" data-en="3rd floor" data-cz="3. podlaží">3rd floor</div></div>
+      <div class="plan-thumb" data-reveal data-delay="2" data-img="assets/plan_storage1.png"><img src="assets/plan_storage1.png" alt="Basement plan"><div class="cap" data-en="Basement / garage" data-cz="Suterén / garáž">Basement / garage</div></div>
+    </div>
+    <p class="plans-note" data-reveal data-en="Indicative floor plans. Full measured plans, technical specification and a fit-out study are available on request — <a href='#contact'>just ask.</a>" data-cz="Orientační půdorysy. Kompletní zaměření, technická specifikace a studie fit-outu jsou k dispozici na vyžádání — <a href='#contact'>stačí napsat.</a>">Indicative floor plans. Full measured plans, technical specification and a fit-out study are available on request — <a href="#contact">just ask.</a></p>
+  </div>
+</section>
+
+<!-- ============ STATEMENT 2 (location) ============ -->
+<section class="statement" id="st2">
+  <div class="parallax-box"><img src="assets/context_wide.jpg" alt="Location toward Prague Castle" data-pspeed="12"></div>
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Location" data-cz="Lokalita">Location</div>
+    <blockquote data-reveal data-delay="1" data-en="A tram at the door — and the Castle down the line." data-cz="Tramvaj u dveří — a Hrad na stejné lince.">A tram at the door — and the Castle down the line.</blockquote>
+  </div>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section class="location pad" id="location">
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Getting here" data-cz="Dostupnost">Getting here</div>
+    <h2 class="section-title" data-reveal data-en="Connected, yet calm." data-cz="Skvěle napojená, a přesto klidná.">Connected, yet calm.</h2>
+    <p class="lead-p" data-reveal data-delay="1" data-en="Bělohorská 17 sits on the Marjánka tram line in Břevnov — well outside the congestion of the centre, but a short, scenic ride from it. The same trams that stop outside carry you past Prague Castle and down into Malá Strana." data-cz="Bělohorská 17 leží na tramvajové trati u zastávky Marjánka v Břevnově — mimo ruch centra, ale jen malebných pár minut od něj. Tytéž tramvaje, které staví přímo před budovou, vás povezou kolem Pražského hradu dolů na Malou Stranu.">Bělohorská 17 sits on the Marjánka tram line in Břevnov — well outside the congestion of the centre, but a short, scenic ride from it.</p>
+    <div class="loc-grid">
+      <div data-reveal>
+        <ul class="transport">
+          <li><span class="t-time">1 min</span><span class="t-txt"><b data-en="Marjánka tram stop" data-cz="Tramvaj Marjánka">Marjánka tram stop</b><span data-en="Directly outside the building on Bělohorská" data-cz="Přímo před budovou na Bělohorské">Directly outside the building on Bělohorská</span></span></li>
+          <li><span class="t-time">22 · 25</span><span class="t-txt"><b data-en="Tram lines at the door" data-cz="Tramvajové linky u vchodu">Tram lines at the door</b><span data-en="Line 22 — Prague's 'Castle tram' — runs direct to Pražský hrad and Malá Strana" data-cz="Linka 22 — pražská „hradní" tramvaj — jede přímo k Pražskému hradu a na Malou Stranu">Line 22 — Prague's 'Castle tram' — runs direct to Pražský hrad and Malá Strana</span></span></li>
+          <li><span class="t-time">~10 min</span><span class="t-txt"><b data-en="Metro Hradčanská (line A)" data-cz="Metro Hradčanská (linka A)">Metro Hradčanská (line A)</b><span data-en="A short tram ride to the metro network" data-cz="Pár minut tramvají k síti metra">A short tram ride to the metro network</span></span></li>
+          <li><span class="t-time">~15 min</span><span class="t-txt"><b data-en="City centre" data-cz="Centrum města">City centre</b><span data-en="Malá Strana and the historic core by tram" data-cz="Malá Strana a historické jádro tramvají">Malá Strana and the historic core by tram</span></span></li>
+          <li><span class="t-time" data-en="By car" data-cz="Autem">By car</span><span class="t-txt"><b data-en="Inner-city ring road" data-cz="Městský okruh">Inner-city ring road</b><span data-en="Quick access via the Strahov tunnel to the wider road network" data-cz="Rychlé napojení přes Strahovský tunel na hlavní silniční síť">Quick access via the Strahov tunnel to the wider road network</span></span></li>
+        </ul>
+      </div>
+      <div data-reveal data-delay="1">
+        <div class="band-label" data-en="The neighbourhood" data-cz="Okolí">The neighbourhood</div>
+        <ul class="hood">
+          <li data-en="Břevnov Monastery — the oldest monastery in Bohemia, with its gardens and brewery" data-cz="Břevnovský klášter — nejstarší klášter v Čechách, se zahradami a pivovarem">Břevnov Monastery — the oldest monastery in Bohemia, with its gardens and brewery</li>
+          <li data-en="Ladronka park — a green ridge for running, cycling and lunch breaks" data-cz="Park Ladronka — zelený hřeben na běh, kolo a polední pauzy">Ladronka park — a green ridge for running, cycling and lunch breaks</li>
+          <li data-en="Marjánka & Bělohorská — cafés, restaurants, shops and services on the doorstep" data-cz="Marjánka a Bělohorská — kavárny, restaurace, obchody a služby za rohem">Marjánka &amp; Bělohorská — cafés, restaurants, shops and services on the doorstep</li>
+          <li data-en="Strahov & Petřín — stadium, gardens and viewpoints minutes away" data-cz="Strahov a Petřín — stadion, zahrady a vyhlídky pár minut daleko">Strahov &amp; Petřín — stadium, gardens and viewpoints minutes away</li>
+          <li data-en="Prague Castle & Hradčany — the diplomatic quarter, a few tram stops on" data-cz="Pražský hrad a Hradčany — diplomatická čtvrť, pár zastávek tramvají">Prague Castle &amp; Hradčany — the diplomatic quarter, a few tram stops on</li>
+        </ul>
+      </div>
+    </div>
+    <div class="map-wrap" data-reveal>
+      <iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=14.3820%2C50.0800%2C14.3975%2C50.0870&amp;layer=mapnik&amp;marker=50.08355%2C14.38975"></iframe>
+      <div class="map-bar">
+        <div class="addr"><b>Bělohorská 270/17</b>, 169 00 Praha 6 – Břevnov</div>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=B%C4%9Blohorsk%C3%A1%20270%2F17%2C%20Praha%206" data-en="Open in Google Maps" data-cz="Otevřít v Google Maps">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery pad" id="gallery">
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Gallery" data-cz="Galerie">Gallery</div>
+    <h2 class="section-title" data-reveal data-en="Day and night on Bělohorská." data-cz="Bělohorská ve dne i v noci.">Day and night on Bělohorská.</h2>
+    <div class="gal-grid">
+      <div class="gal-item span2 row2" data-reveal data-img="assets/g_atrium.jpg"><img src="assets/g_atrium.jpg" alt="Skylit central atrium"><div class="gcap" data-en="Skylit atrium" data-cz="Prosklené atrium">Skylit atrium</div></div>
+      <div class="gal-item" data-reveal data-delay="1" data-img="assets/g_stair.jpg"><img src="assets/g_stair.jpg" alt="Main staircase"><div class="gcap" data-en="Main staircase" data-cz="Hlavní schodiště">Main staircase</div></div>
+      <div class="gal-item" data-reveal data-delay="2" data-img="assets/g_reception.jpg"><img src="assets/g_reception.jpg" alt="Reception"><div class="gcap" data-en="Reception" data-cz="Recepce">Reception</div></div>
+      <div class="gal-item span2" data-reveal data-img="assets/g_office_oval.jpg"><img src="assets/g_office_oval.jpg" alt="Office with feature oval window"><div class="gcap" data-en="Office with feature window" data-cz="Kancelář s originálním oknem">Office with feature window</div></div>
+      <div class="gal-item" data-reveal data-delay="1" data-img="assets/g_atrium_top.jpg"><img src="assets/g_atrium_top.jpg" alt="Garage and parking"><div class="gcap" data-en="Garage & parking" data-cz="Garáž a parkování">Garage &amp; parking</div></div>
+      <div class="gal-item" data-reveal data-delay="2" data-img="assets/g_office_attic.jpg"><img src="assets/g_office_attic.jpg" alt="Top-floor office"><div class="gcap" data-en="Top-floor office" data-cz="Kancelář v podkroví">Top-floor office</div></div>
+      <div class="gal-item" data-reveal data-img="assets/g_office_garden.jpg"><img src="assets/g_office_garden.jpg" alt="Office under the roof"><div class="gcap" data-en="Office under the roof" data-cz="Kancelář v podkroví">Office under the roof</div></div>
+      <div class="gal-item" data-reveal data-delay="1" data-img="assets/g_kitchen.jpg"><img src="assets/g_kitchen.jpg" alt="Glazed landing"><div class="gcap" data-en="Glazed landing" data-cz="Prosklená podesta">Glazed landing</div></div>
+      <div class="gal-item span2" data-reveal data-img="assets/g_garage.jpg"><img src="assets/g_garage.jpg" alt="Bělohorská streetscape"><div class="gcap" data-en="Bělohorská streetscape" data-cz="Ulice Bělohorská">Bělohorská streetscape</div></div>
+      <div class="gal-item" data-reveal data-delay="1" data-img="assets/g_facade.jpg"><img src="assets/g_facade.jpg" alt="Street façade"><div class="gcap" data-en="Street façade" data-cz="Uliční fasáda">Street façade</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact pad" id="contact">
+  <div class="wrap">
+    <div class="band-label" data-reveal data-en="Enquire" data-cz="Poptávka">Enquire</div>
+    <h2 class="section-title" data-reveal data-en="Arrange a viewing of Bělohorská 17." data-cz="Domluvte si prohlídku Bělohorské 17.">Arrange a viewing of Bělohorská 17.</h2>
+    <div class="grid">
+      <div class="agent" data-reveal>
+        <div class="role" data-en="Leasing enquiries" data-cz="Poptávky pronájmu">Leasing enquiries</div>
+        <div class="pname">Petr Florián</div>
+        <div class="company" data-en="Head of Leasing CZ & SK · Avison Young" data-cz="Head of Leasing CZ & SK · Avison Young">Head of Leasing CZ &amp; SK · Avison Young</div>
+        <div class="crow"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:petr.florian@avisonyoung.com">petr.florian@avisonyoung.com</a></div>
+        <div class="crow"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg><a href="tel:+420722022254">+420 722 022 254</a></div>
+        <div class="crow"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.2-7-10a7 7 0 0114 0c0 4.8-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg><span>Avison Young · Praha</span></div>
+        <p class="note" data-en="Leasing advisory provided by Avison Young on behalf of the owner, UNIQA Real Estate CZ." data-cz="Poradenství při pronájmu poskytuje Avison Young jménem vlastníka, UNIQA Real Estate CZ.">Leasing advisory provided by Avison Young on behalf of the owner, UNIQA Real Estate CZ.</p>
+      </div>
+      <form data-reveal data-delay="1" id="enqForm">
+        <div class="two">
+          <div class="frow"><label data-en="Name" data-cz="Jméno">Name</label><input type="text" id="f-name" data-en-ph="Your name" data-cz-ph="Vaše jméno" placeholder="Your name"></div>
+          <div class="frow"><label data-en="Company" data-cz="Společnost">Company</label><input type="text" id="f-company" data-en-ph="Company" data-cz-ph="Společnost" placeholder="Company"></div>
+        </div>
+        <div class="two">
+          <div class="frow"><label data-en="Email" data-cz="E-mail">Email</label><input type="email" id="f-email" data-en-ph="you@company.com" data-cz-ph="vy@spolecnost.cz" placeholder="you@company.com"></div>
+          <div class="frow"><label data-en="Area of interest" data-cz="Požadovaná plocha">Area of interest</label>
+            <select id="f-area">
+              <option data-en="Whole building (~1,054 m²)" data-cz="Celá budova (~1 054 m²)">Whole building (~1,054 m²)</option>
+              <option data-en="Part of the building" data-cz="Část budovy">Part of the building</option>
+              <option data-en="Just exploring" data-cz="Jen se rozhlížím">Just exploring</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow"><label data-en="Message" data-cz="Zpráva">Message</label><textarea id="f-msg" data-en-ph="Tell us a little about your requirement and preferred timing for a viewing." data-cz-ph="Napište nám prosím pár slov o vašem požadavku a preferovaném termínu prohlídky."></textarea></div>
+        <button type="submit" class="btn" data-en="Send enquiry" data-cz="Odeslat poptávku">Send enquiry</button>
+        <p class="form-hint" data-en="This opens your email app with the message pre-filled to Petr." data-cz="Otevře se vaše e-mailová aplikace s předvyplněnou zprávou pro Petra.">This opens your email app with the message pre-filled to Petr.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div class="f-brand"><div class="name">Bělohorská 17</div><div class="sub">Břevnov · Praha 6</div></div>
+      <div class="f-col"><h4 data-en="Explore" data-cz="Sekce">Explore</h4>
+        <a href="#overview" data-en="Overview" data-cz="Přehled">Overview</a>
+        <a href="#building" data-en="The Building" data-cz="Budova">The Building</a>
+        <a href="#specs" data-en="Specs & Plans" data-cz="Parametry">Specs &amp; Plans</a>
+        <a href="#location" data-en="Location" data-cz="Lokalita">Location</a>
+        <a href="#gallery" data-en="Gallery" data-cz="Galerie">Gallery</a>
+      </div>
+      <div class="f-col"><h4 data-en="Leasing" data-cz="Pronájem">Leasing</h4>
+        <a href="mailto:petr.florian@avisonyoung.com">petr.florian@avisonyoung.com</a>
+        <a href="tel:+420722022254">+420 722 022 254</a>
+        <p>Petr Florián</p><p data-en="Head of Leasing CZ & SK" data-cz="Head of Leasing CZ & SK">Head of Leasing CZ &amp; SK</p><p>Avison Young</p>
+      </div>
+      <div class="f-col"><h4 data-en="The asset" data-cz="Nemovitost">The asset</h4>
+        <p>Bělohorská 270/17</p><p>169 00 Praha 6 – Břevnov</p><p data-en="Owned by UNIQA Real Estate CZ" data-cz="Ve vlastnictví UNIQA Real Estate CZ">Owned by UNIQA Real Estate CZ</p>
+      </div>
+    </div>
+    <div class="legal">
+      <span data-en="© 2026 · Bělohorská 17. An asset of UNIQA Real Estate CZ. Leasing by Avison Young." data-cz="© 2026 · Bělohorská 17. Nemovitost UNIQA Real Estate CZ. Pronájem zajišťuje Avison Young.">© 2026 · Bělohorská 17. An asset of UNIQA Real Estate CZ. Leasing by Avison Young.</span>
+      <span data-en="Areas and terms indicative and subject to contract." data-cz="Plochy a podmínky jsou orientační a nezávazné.">Areas and terms indicative and subject to contract.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb">
+  <span class="close" id="lbClose">&times;</span>
+  <span class="nav prev" id="lbPrev">&#8249;</span>
+  <img id="lbImg" src="" alt="">
+  <span class="nav next" id="lbNext">&#8250;</span>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var root = document.documentElement;
+
+  /* ---------- Language ---------- */
+  var lang='en';
+  try{var s=localStorage.getItem('bel17_lang'); if(s) lang=s;}catch(e){}
+  function applyLang(l){
+    lang=l; root.lang=(l==='cz')?'cs':'en';
+    document.querySelectorAll('[data-'+l+']').forEach(function(el){ el.innerHTML=el.getAttribute('data-'+l); });
+    document.querySelectorAll('[data-'+l+'-ph]').forEach(function(el){ el.setAttribute('placeholder', el.getAttribute('data-'+l+'-ph')); });
+    document.querySelectorAll('#lang button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang')===l); });
+    try{localStorage.setItem('bel17_lang',l);}catch(e){}
+  }
+  document.querySelectorAll('#lang button').forEach(function(b){ b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); refreshDetail(); if(window.ScrollTrigger) ScrollTrigger.refresh(); }); });
+
+  /* ---------- Header + progress ---------- */
+  var hdr=document.getElementById('hdr'), prog=document.getElementById('progress');
+  function onScroll(){
+    var y=window.scrollY||window.pageYOffset;
+    hdr.classList.toggle('solid', y>60);
+    var h=document.body.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(y/h*100):0)+'%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* ---------- Mobile menu ---------- */
+  var mt=document.getElementById('menuToggle'), nav=document.getElementById('nav');
+  mt.addEventListener('click', function(){ nav.classList.toggle('open'); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+
+  /* ---------- Floor stack ---------- */
+  var floors=document.querySelectorAll('#stack .floor');
+  var dUse=document.getElementById('dtUse'),dName=document.getElementById('dtName'),dArea=document.getElementById('dtArea'),dDesc=document.getElementById('dtDesc');
+  var current=document.querySelector('#stack .floor.active');
+  function refreshDetail(){ if(!current)return; dName.textContent=current.getAttribute('data-'+lang+'-name'); dUse.textContent=current.getAttribute('data-'+lang+'-use'); dArea.textContent=current.getAttribute('data-area'); dDesc.textContent=current.getAttribute('data-'+lang+'-desc'); }
+  floors.forEach(function(f){ f.addEventListener('click', function(){ floors.forEach(function(x){x.classList.remove('active');}); f.classList.add('active'); current=f; refreshDetail(); }); });
+
+  /* ---------- Lightbox ---------- */
+  var lbItems=[]; document.querySelectorAll('.gal-item,.plan-thumb').forEach(function(el){ lbItems.push(el); });
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap'),lbIndex=0;
+  function capOf(el){var c=el.querySelector('.gcap,.cap');return c?c.textContent:'';}
+  function openLb(i){lbIndex=(i+lbItems.length)%lbItems.length;var el=lbItems[lbIndex];lbImg.src=el.getAttribute('data-img');lbCap.textContent=capOf(el);lb.classList.add('open');}
+  lbItems.forEach(function(el,i){ el.addEventListener('click', function(){ openLb(i); }); });
+  document.getElementById('lbClose').addEventListener('click', function(){ lb.classList.remove('open'); });
+  document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); openLb(lbIndex+1); });
+  document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); openLb(lbIndex-1); });
+  lb.addEventListener('click', function(e){ if(e.target===lb) lb.classList.remove('open'); });
+  document.addEventListener('keydown', function(e){ if(!lb.classList.contains('open'))return; if(e.key==='Escape')lb.classList.remove('open'); if(e.key==='ArrowRight')openLb(lbIndex+1); if(e.key==='ArrowLeft')openLb(lbIndex-1); });
+
+  /* ---------- Enquiry form ---------- */
+  document.getElementById('enqForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var n=document.getElementById('f-name').value,c=document.getElementById('f-company').value,em=document.getElementById('f-email').value,ar=document.getElementById('f-area').value,m=document.getElementById('f-msg').value;
+    var subj='Bělohorská 17 — enquiry'+(c?' — '+c:'');
+    var body='Name: '+n+'\nCompany: '+c+'\nEmail: '+em+'\nArea of interest: '+ar+'\n\n'+m;
+    window.location.href='mailto:petr.florian@avisonyoung.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+  });
+
+  /* ---------- Smooth scroll (Lenis) ---------- */
+  var lenis=null;
+  if(typeof Lenis!=='undefined' && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    lenis=new Lenis({lerp:0.09, wheelMultiplier:0.9, smoothWheel:true});
+  }
+  // anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id=a.getAttribute('href'); if(id.length<2) return;
+      var t=document.querySelector(id); if(!t) return;
+      e.preventDefault();
+      if(lenis){ lenis.scrollTo(t, {offset:-70}); } else { t.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+
+  /* ---------- GSAP: hero mask + parallax ---------- */
+  var hasGsap = (typeof gsap!=='undefined' && typeof ScrollTrigger!=='undefined' && !matchMedia('(prefers-reduced-motion: reduce)').matches);
+  if(hasGsap){
+    gsap.registerPlugin(ScrollTrigger);
+    if(lenis){ lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(function(t){ lenis.raf(t*1000); }); gsap.ticker.lagSmoothing(0); }
+
+    // Hero masked reveal — CSS position:sticky handles the pin; we just scrub the timeline
+    var tl=gsap.timeline({scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom bottom', scrub:0.6}});
+    tl.to('#heroMask',{width:'100vw', height:'100vh', borderRadius:0, ease:'power2.inOut'},0)
+      .to('#heroImg',{scale:1, ease:'power2.inOut'},0)
+      .to('#heroScrim',{opacity:1, ease:'power1.in'},0)
+      .to('#heroBrand',{opacity:0, y:-30, ease:'power1.in'},0)
+      .to('#scrollcue',{opacity:0, ease:'power1.in'},0)
+      .to('#heroCopy',{opacity:1, ease:'power2.out'},0.55);
+
+    // Reveals (batch)
+    ScrollTrigger.batch('[data-reveal]',{start:'top 84%', onEnter:function(b){ b.forEach(function(el){ el.classList.add('in'); }); }});
+    document.querySelectorAll('[data-clip]').forEach(function(el){
+      ScrollTrigger.create({trigger:el, start:'top 86%', onEnter:function(){ el.classList.add('in'); }});
+    });
+    // Image parallax inside .parallax-box
+    document.querySelectorAll('.parallax-box img').forEach(function(img){
+      var sp=parseFloat(img.getAttribute('data-pspeed'))||12;
+      gsap.fromTo(img,{yPercent:-sp},{yPercent:sp, ease:'none', scrollTrigger:{trigger:img.closest('.parallax-box'), start:'top bottom', end:'bottom top', scrub:true}});
+    });
+  } else {
+    root.classList.add('no-gsap');
+    var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }); },{threshold:0.14});
+    document.querySelectorAll('[data-reveal],[data-clip]').forEach(function(el){ io.observe(el); });
+  }
+
+  /* Drive Lenis from a single source: GSAP ticker when present, else rAF */
+  if(lenis && !hasGsap){ (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(); }
+
+  /* init */
+  applyLang(lang); refreshDetail(); onScroll();
+})();
+</script>
+</body>
+</html>
