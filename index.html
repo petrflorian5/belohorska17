@@ -155,6 +155,9 @@
   .spec-table .v{font-family:var(--serif);font-size:1.55rem;font-weight:400}
   .spec-table .v .n{font-family:var(--sans);font-size:.84rem;color:var(--muted)}
   .spec-table .d{font-size:.86rem;color:var(--muted)}
+  .spec-table .row.total{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+  .spec-table .row.total .k{color:var(--ink);font-weight:700}
+  .rate-note{margin-top:14px;font-size:.78rem;color:var(--muted)}
   .plans-row{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:52px}
   .plan-thumb{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:12px;cursor:pointer;transition:transform .3s,box-shadow .3s}
   .plan-thumb:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(27,31,36,.11)}
@@ -289,6 +292,7 @@
     </nav>
     <div class="hdr-tools">
       <div class="lang" id="lang"><button data-lang="en" class="active">EN</button><span>/</span><button data-lang="cz">CZ</button></div>
+      <div class="lang" id="curr"><button data-curr="eur" class="active">EUR</button><span>/</span><button data-curr="czk">CZK</button></div>
       <a href="#contact" class="btn" data-en="Enquire" data-cz="Poptat">Enquire</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
@@ -342,7 +346,8 @@
           <div><dt data-en="Typical floor" data-cz="Typické podlaží">Typical floor</dt><dd>~270 m²</dd></div>
           <div><dt data-en="Floors" data-cz="Podlaží">Floors</dt><dd>4 above / 2 below</dd></div>
           <div><dt data-en="Parking" data-cz="Parkování">Parking</dt><dd>6 spaces</dd></div>
-          <div><dt data-en="Office rent" data-cz="Nájem kanceláří">Office rent</dt><dd>from €10 / m² / mo</dd></div>
+          <div><dt data-en="Office rent" data-cz="Nájem kanceláří">Office rent</dt><dd><span data-en="from" data-cz="od">from</span> <span class="pr" data-eur="10">€10</span> / m² / mo</dd></div>
+          <div><dt data-en="Total rent" data-cz="Celkový nájem">Total rent</dt><dd><span class="pr" data-eur="12470">€12,470</span> / mo</dd></div>
         </dl>
         <div class="avail" data-en="Available immediately" data-cz="Volné ihned">Available immediately</div>
       </div>
@@ -400,12 +405,14 @@
       </div>
     </div>
     <div class="spec-table" data-reveal>
-      <div class="row"><div class="k" data-en="Office rent" data-cz="Nájem kanceláří">Office rent</div><div class="v">€10 <span class="n">/ m² / mo</span></div><div class="d" data-en="Headline rent, subject to terms" data-cz="Základní nájem, dle podmínek">Headline rent, subject to terms</div></div>
-      <div class="row"><div class="k" data-en="Storage rent" data-cz="Nájem skladů">Storage rent</div><div class="v">€7 <span class="n">/ m² / mo</span></div><div class="d" data-en="Storage & ancillary space" data-cz="Sklady a vedlejší plochy">Storage &amp; ancillary space</div></div>
-      <div class="row"><div class="k" data-en="Service charge" data-cz="Služby">Service charge</div><div class="v">46 <span class="n">CZK / m² / mo</span></div><div class="d" data-en="Office & storage" data-cz="Kanceláře i sklady">Office &amp; storage</div></div>
-      <div class="row"><div class="k" data-en="Parking" data-cz="Parkování">Parking</div><div class="v">6 <span class="n" data-en="spaces" data-cz="stání">spaces</span></div><div class="d" data-en="In the building's garage" data-cz="Ve vlastní garáži budovy">In the building's garage</div></div>
+      <div class="row"><div class="k" data-en="Office rent" data-cz="Nájem kanceláří">Office rent</div><div class="v"><span class="pr" data-eur="10">€10</span> <span class="n">/ m² / mo</span></div><div class="d" data-en="Headline rent, subject to terms" data-cz="Základní nájem, dle podmínek">Headline rent, subject to terms</div></div>
+      <div class="row"><div class="k" data-en="Storage rent" data-cz="Nájem skladů">Storage rent</div><div class="v"><span class="pr" data-eur="5">€5</span> <span class="n">/ m² / mo</span></div><div class="d" data-en="Storage & ancillary space" data-cz="Sklady a vedlejší plochy">Storage &amp; ancillary space</div></div>
+      <div class="row"><div class="k" data-en="Service charge" data-cz="Služby">Service charge</div><div class="v"><span class="pr" data-czk="46">46&nbsp;Kč</span> <span class="n">/ m² / mo</span></div><div class="d" data-en="Office & storage" data-cz="Kanceláře i sklady">Office &amp; storage</div></div>
+      <div class="row"><div class="k" data-en="Parking" data-cz="Parkování">Parking</div><div class="v"><span class="pr" data-eur="125">€125</span> <span class="n" data-en="/ space / mo" data-cz="/ stání / měs.">/ space / mo</span></div><div class="d" data-en="6 spaces in the building's garage" data-cz="6 stání ve vlastní garáži budovy">6 spaces in the building's garage</div></div>
+      <div class="row total"><div class="k" data-en="Total — whole building" data-cz="Celkem za celou budovu">Total — whole building</div><div class="v"><span class="pr" data-eur="12470">€12,470</span> <span class="n">/ mo</span></div><div class="d" data-en="Offices 1,054 m² + storage 236 m² + 6 parking spaces · excl. service charge &amp; VAT" data-cz="Kanceláře 1 054 m² + sklady 236 m² + 6 parkovacích stání · bez služeb a DPH">Offices 1,054 m² + storage 236 m² + 6 parking spaces · excl. service charge &amp; VAT</div></div>
       <div class="row"><div class="k" data-en="Availability" data-cz="Dostupnost">Availability</div><div class="v" data-en="Immediate" data-cz="Ihned">Immediate</div><div class="d" data-en="Whole building, to let" data-cz="Celá budova, k pronájmu">Whole building, to let</div></div>
     </div>
+    <div class="rate-note" id="rateNote" data-reveal></div>
     <div class="plans-row">
       <div class="plan-thumb" data-reveal data-img="assets/plan_gf.png"><img src="assets/plan_gf.png" alt="Ground floor plan"><div class="cap" data-en="Ground floor" data-cz="Přízemí">Ground floor</div></div>
       <div class="plan-thumb" data-reveal data-delay="1" data-img="assets/plan_1f.png"><img src="assets/plan_1f.png" alt="1st floor plan"><div class="cap" data-en="1st floor" data-cz="1. podlaží">1st floor</div></div>
@@ -580,7 +587,42 @@
     document.querySelectorAll('#lang button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-lang')===l); });
     try{localStorage.setItem('bel17_lang',l);}catch(e){}
   }
-  document.querySelectorAll('#lang button').forEach(function(b){ b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); refreshDetail(); if(window.ScrollTrigger) ScrollTrigger.refresh(); }); });
+  document.querySelectorAll('#lang button').forEach(function(b){ b.addEventListener('click', function(){ applyLang(b.getAttribute('data-lang')); applyCurr(curr); refreshDetail(); if(window.ScrollTrigger) ScrollTrigger.refresh(); }); });
+
+  /* ---------- Currency (EUR default, CZK via live ECB rate) ---------- */
+  var RATE_FALLBACK=24.19, curr='eur', czkRate=RATE_FALLBACK, rateLive=false;
+  try{var c=localStorage.getItem('bel17_curr'); if(c==='czk'||c==='eur') curr=c;}catch(e){}
+  function group(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0'); }
+  function applyCurr(cu){
+    curr=cu;
+    document.querySelectorAll('.pr').forEach(function(el){
+      var eur=el.getAttribute('data-eur'), czk=el.getAttribute('data-czk'), v, txt;
+      if(curr==='eur'){
+        v = (eur!==null) ? parseFloat(eur) : parseFloat(czk)/czkRate;
+        txt = '\u20ac' + (v>=10 ? group(Math.round(v)) : String(Math.round(v*10)/10).replace('.', lang==='cz'?',':'.'));
+      }else{
+        v = (czk!==null) ? parseFloat(czk) : parseFloat(eur)*czkRate;
+        txt = group(Math.round(v)) + '\u00a0K\u010d';
+      }
+      el.textContent=txt;
+    });
+    document.querySelectorAll('#curr button').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-curr')===curr); });
+    var rn=document.getElementById('rateNote');
+    if(rn){
+      var rTxt='1\u00a0\u20ac = '+czkRate.toFixed(2).replace('.',',')+'\u00a0K\u010d';
+      rn.textContent=(lang==='cz')
+        ? 'Přepočet do CZK dle '+(rateLive?'aktuálního kurzu ECB':'orientačního kurzu')+' ('+rTxt+').'
+        : 'CZK prices converted at '+(rateLive?'the current ECB rate':'an indicative rate')+' ('+rTxt+').';
+    }
+    try{localStorage.setItem('bel17_curr',curr);}catch(e){}
+  }
+  document.querySelectorAll('#curr button').forEach(function(b){ b.addEventListener('click', function(){ applyCurr(b.getAttribute('data-curr')); }); });
+  try{
+    fetch('https://api.frankfurter.dev/v1/latest?base=EUR&symbols=CZK')
+      .then(function(r){ return r.json(); })
+      .then(function(d){ if(d && d.rates && d.rates.CZK){ czkRate=d.rates.CZK; rateLive=true; applyCurr(curr); } })
+      .catch(function(){});
+  }catch(e){}
 
   /* ---------- Header + progress ---------- */
   var hdr=document.getElementById('hdr'), prog=document.getElementById('progress');
@@ -689,7 +731,7 @@
   if(lenis && !hasGsap){ (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(); }
 
   /* init */
-  applyLang(lang); refreshDetail(); onScroll();
+  applyLang(lang); applyCurr(curr); refreshDetail(); onScroll();
 })();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
